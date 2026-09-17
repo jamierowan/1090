@@ -3,52 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>1090.games</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f4f6f8; color: #333; text-align: center; }
-    
-    .banner {
-      background-color: #1f2937;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Single color background covering the entire browser height */
+    body {
+      background-color: #0f172a; /* Change hex code to set background color */
       color: #ffffff;
-      padding: 16px 20px;
-      font-size: 0.95rem;
-      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Centered container */
+    .container {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Custom Banner Image */
+    .banner-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    /* Description */
+    .description {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    /* Games Header */
+    h2.section-header {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 20px;
       letter-spacing: 0.5px;
     }
 
-    .container { max-width: 500px; margin: 50px auto; padding: 0 20px; }
-    h1 { font-size: 2rem; margin-bottom: 12px; color: #111827; }
-    p.subtitle { color: #6b7280; margin-bottom: 30px; font-size: 1rem; }
-
-    .links { display: flex; flex-direction: column; gap: 12px; }
-    .link-btn {
-      display: block;
-      padding: 14px 20px;
-      background-color: #2563eb;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background-color 0.2s ease;
+    /* Game Links List */
+    .games-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
     }
-    .link-btn:hover { background-color: #1d4ed8; }
+
+    .game-link {
+      display: block;
+      padding: 16px 24px;
+      background-color: #1e293b;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .game-link:hover {
+      background-color: #334155;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
 
-  <div class="banner">
-    Welcome to My Official Site
-  </div>
-
   <div class="container">
-    <h1>My Website Header</h1>
-    <p class="subtitle">Connect with me across the web:</p>
+    <!-- Replace 'banner.png' with your image filename or image URL -->
+    <img src="banner.png" alt="1090.games Banner" class="banner-img">
 
-    <div class="links">
-      <a href="https://example.com" class="link-btn" target="_blank">First Link</a>
-      <a href="https://example.com" class="link-btn" target="_blank">Second Link</a>
-      <a href="https://example.com" class="link-btn" target="_blank">Third Link</a>
+    <!-- Small Description -->
+    <p class="description">
+      Welcome to 1090.games. Play quick browser games and experimental projects directly in your browser.
+    </p>
+
+    <!-- Games Section Header -->
+    <h2 class="section-header">Games</h2>
+
+    <!-- Game Links -->
+    <div class="games-list">
+      <a href="https://example.com/game-one" class="game-link" target="_blank">Game Title One</a>
+      <a href="https://example.com/game-two" class="game-link" target="_blank">Game Title Two</a>
+      <a href="https://example.com/game-three" class="game-link" target="_blank">Game Title Three</a>
     </div>
   </div>
 
