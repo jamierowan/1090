@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1090.games</title>
+  <style>
+    /* Solid single-color background covering the whole page */
+    html, body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #0f172a; /* Slate dark background - change to any hex code */
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Logo image styling */
+    .logo {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Description text */
+    .description {
+      font-size: 1rem;
+      color: #94a3b8;
+      max-width: 400px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    /* Section header */
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Game links list */
+    .game-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .game-card {
+      display: block;
+      padding: 14px 20px;
+      background-color: #1e293b;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .game-card:hover {
+      background-color: #334155;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Replace logo.png with your uploaded logo filename -->
+    <img src="logo.png" alt="1090.games Logo" class="logo">
+
+    <!-- Short description -->
+    <p class="description">Play browser games directly in your browser.</p>
+
+    <!-- Header -->
+    <h2>Games</h2>
+
+    <!-- Game links -->
+    <div class="game-links">
+      <a href="https://example.com/game-one" class="game-card" target="_blank">Game Title One</a>
+      <a href="https://example.com/game-two" class="game-card" target="_blank">Game Title Two</a>
+    </div>
+  </div>
+
+</body>
+</html>
